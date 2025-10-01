@@ -5,11 +5,11 @@ public class CourseNumbersArray {
         int[] registeredCourses = {1010, 1020, 2080, 2140, 2150, 2160};
 
         //Adding a new course
-        int[] updatedCourses = new int[registeredCourses.lenght + 1];
-        for (int i = 0 ; i < registeredCourses.lengh ; i++){
+        int[] updatedCourses = new int[registeredCourses.length + 1];
+        for (int i = 0 ; i < registeredCourses.length ; i++){
             updatedCourses[i] = registeredCourses[i];
         }
-        updatedCourses[registeredCourses] = 3150 // the newly added course appened on the right;
+        updatedCourses[registeredCourses.length] = 3150; // the newly added course appened on the right;
 
         //Printing the content of updatedCourses
         for (int course : updatedCourses){
